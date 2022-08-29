@@ -1,0 +1,35 @@
+/* Setting the height and width of the card, and the border, and the box shadow. */
+.card {
+    height: 50vh;
+    width: 41vw;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid var(--cardborderbody);
+    border-top: 3px solid var(--cardbordertop);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+/* Setting the background color, height, color, align items, and padding of the card header. */
+.card-header {
+    background-color: var(--cardheader);
+    height: 10vh;
+    color: var(--cardheaderfont);
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Setting the height of the card body to 100vh, which is the height of the viewport. It is also
+setting the border top to 1px solid var(--cardbordertopbody), which is the border top of the card
+body. It is also setting the background color of the card body to var(--carbody), which is the
+background color of the card body. It is also setting the padding to 1rem, which is the padding of
+the card body. */
+
+.card-body {
+    height: 100vh;
+    border-top: 1px solid var(--cardbordertopbody);
+    background-color: var(--carbody);
+    padding: 1rem;
+}

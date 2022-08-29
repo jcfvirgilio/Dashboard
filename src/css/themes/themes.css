@@ -1,0 +1,84 @@
+/* Defining the variables for the light theme. */
+:root {
+    --body: #FFEDE2;
+    --header: #F8FAFC;
+    --footer: #677C96;
+    --colorwhite: #FFFF;
+    --colorblack: #000;
+    --colorfontheader: #2D3948;
+    --colorfontfooter: #F0F4F8;
+    --backgroundcolorswitch: #BFCCDA;
+    --backgroundasidemenu: #F8FAFC;
+    --backgroundcontent: #F8FAFC;
+
+
+    --cardheader: #F7F7F7;
+    --cardheaderfont: #252525;
+    --carbody: #FFFFFF;
+    --cardborderbody: #EFEFEF;
+    --cardbordertopbody: #DEE0E7;
+    --cardbordertop: #a4acb8;
+
+}
+
+/* Defining the variables for the dark theme. */
+
+:root.dark-theme {
+    --body: #111827;
+    --header: #111827;
+    --footer: #8799AF;
+    --colorwhite: #FFFF;
+    --colorblack: #000;
+    --colorfontheader: #6EBDB9;
+    --colorfontfooter: #E8E9EA;
+    --backgroundcolorswitch: #34455C;
+    --backgroundasidemenu: #111827;
+    --backgroundcontent: #111827;
+    --borderheader: #111827;
+
+    --cardheader: #29303D;
+    --cardheaderfont: #FFFFFF;
+    --carbody: #1E293A;
+    --cardborderbody: black;
+    --cardbordertopbody: #324155;
+    --cardbordertop: #64748B;
+}
+
+
+/* A media query that checks if the user has dark mode enabled on their device. If they do, it will
+automatically apply the dark theme. */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body: #000000;
+        --header: #000000;
+        --footer: #087C87;
+        --colorwhite: #FFFF;
+        --colorblack: #000;
+        --colorfontheader: #6EBDB9;
+        --colorfontfooter: #E8E9EA;
+        --backgroundcolorswitch: #34455C;
+        --backgroundasidemenu: #000000;
+        --backgroundcontent: #000000;
+        --borderheader: #000000;
+
+        --cardheader: #1C1B22;
+        --cardheaderfont: #FFFFFF;
+        --carbody: #1E293A;
+        --cardborderbody: #1C1B22;
+        --cardbordertopbody: #324155;
+        --cardbordertop: silver;
+    }
+
+    nav img {
+        filter: brightness(2000%);
+        width: 5rem;
+        height: 2.3rem;
+    }
+}
+
+/* Making the logo brighter when the dark theme is applied. */
+.dark-theme nav img {
+    filter: brightness(500%);
+    width: 5rem;
+    height: 2.3rem;
+}

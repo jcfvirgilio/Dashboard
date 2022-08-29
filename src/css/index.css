@@ -1,0 +1,135 @@
+/* 
+* Normalize: Making sure that the padding and border are included in the total width and height of an element. 
+*/
+* {
+    /* So 100% means 100% */
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-family: Calibri (Body);
+    font-size: 1rem;
+}
+
+
+body {
+    background-color: var(--body);
+    margin: 0.4rem 1rem 0rem 1rem;
+}
+
+
+
+/***** header and Nav **** */
+
+
+/* Styling the nav bar. */
+nav {
+    background-color: var(--header);
+    color: var(--colorfontheader);
+    border-bottom: 1px solid var(--borderheader);
+    font-size: 1.2rem;
+    height: 3.5rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+nav img {
+    width: 5rem;
+    height: 2.3rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    direction: rtl;
+    height: 0rem;
+    gap: 0.3rem;
+    padding: 0 1rem 0 0;
+    margin: 0;
+}
+
+
+
+nav ul:first-child {
+    display: flex;
+    list-style: none;
+    padding: 1rem 0.5rem;
+    direction: ltr;
+}
+
+nav ul:nth-child(2n) {
+    display: flex;
+    list-style: none;
+    padding-left: 6.5rem;
+    direction: ltr;
+}
+
+
+/***** Main *****/
+
+/* Adding a drop shadow to the container. */
+.container {
+    filter: drop-shadow(0 0 0.1rem crimson);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+/* Setting the height of the main element to 87vh, which is 87% of the viewport height. It is also
+setting the display to grid and the grid-template-areas to 'sidebar content'. */
+main {
+    height: 87vh;
+    display: grid;
+    grid-template-areas: 'sidebar content';
+}
+
+/* The above code is creating a grid layout with two columns. The first column is the sidebar and the
+second column is the content. */
+aside {
+    grid-area: 'sidebar';
+    background-color: var(--backgroundasidemenu);
+    /* height: 87vh; */
+    width: 10vw;
+}
+
+section {
+    grid-area: 'content';
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0.5rem;
+    background-color: var(--backgroundcontent);
+    overflow: scroll;
+}
+
+
+/**** rows ****/
+
+/* Creating two rows. */
+.first-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.second-row {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+}
+
+/***** Footer *****/
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--footer);
+    color: var(--colorfontfooter);
+    padding-left: 1rem;
+}
+
+.button_menu_left {
+    display: none;
+}

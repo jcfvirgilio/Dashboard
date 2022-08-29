@@ -1,0 +1,50 @@
+/* The above code is for the media query. */
+@media (max-width: 600px) {
+
+    aside {
+        display: none;
+    }
+
+
+    nav ul:nth-child(4n) {
+        overflow: visible;
+        padding-left: 26rem;
+    }
+
+    .button_menu_left {
+        display: flex;
+    }
+
+    .card {
+        height: 50vh;
+        width: 50vw !important;
+    }
+
+    .show_menu_left aside {
+        /* position: absolute; */
+        display: flex;
+        z-index: 1;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 50vw;
+    }
+
+    .show_menu_right nav ul:nth-child(3n) {
+        display: flex;
+    }
+
+
+    .dark-theme nav ul:nth-child(4n) {
+        display: flex;
+        list-style: none;
+        padding-left: 10rem;
+        direction: rtl;
+        filter: invert();
+    }
+
+    .dark-theme .button_menu_left {
+        display: flex;
+        filter: invert();
+    }
+
+
+}

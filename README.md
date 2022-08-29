@@ -1,10 +1,10 @@
-# Dashboard
-Dashboard with css
+# Dashboard Responsive
+Dashboard reponsive with css
 
-## USE
+## Basic usage
     open index.html
 
-##CSS
+## CSS
     display: flex;
     flex-direction: column;
     flex-grow: 1;

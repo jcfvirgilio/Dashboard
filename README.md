@@ -1,5 +1,5 @@
 # Dashboard Responsive
-Open source dashboard with reponsive and media query that checks if the user has dark mode enabled on their device. If they do, it will automatically apply the dark theme.
+Open source dashboard with responsive and media query that checks if the user has dark mode enabled on their device. If they do, it will automatically apply the dark theme.
 
 ## Basic usage
     open index.html
